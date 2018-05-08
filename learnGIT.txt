@@ -1,0 +1,24 @@
+1、新建工程
+2、在工程的根目录中执行 git init --> 会在当前目录下创建一个git文件夹，这个文件夹中的内容是用来进行
+版本控制的
+3、要想进入版本控制的文件，必须放在工程根目录下（或子目录）
+4、git add 文件名 --> 将指定文件加入仓库
+5、git commit －m “提交的一些注释”   －－> 将文件提交到仓库
+6、git status --> 掌握仓库的当前状态，比如哪些文件修改了，但还没有提交
+7、git diff 文件名 --> 查看文件的具体改动信息
+8、git log --> 显示从最近到最远的提交日志
+9、git log --pretty=oneline --> 
+
+版本回退 
+git reset --hard HEAD^ 回退到当前版本的上一个版本
+git reset --hard 版本号 回退到指定版本 （前提 终端窗口没有关闭）
+eg： git reset --hard b3e1d42404b3d7c032e4833775938ab7412219b0
+
+git reflog  用来纪录你的每一次命令
+
+暂存区文件撤销
+git reset HEAD file 
+
+工作区撤销
+get checkout -- readme.txt (文件名) 如果有暂存区就回到暂存区，如果没有就回到
+最新的版本
